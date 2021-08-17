@@ -4,14 +4,14 @@
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 import * as React from "react";
-import { ViewStyle } from "react-native";
+import { ViewStyle, TextStyle } from "react-native";
 
 
 export interface StepsAsProps {
     index: number;
     stepLabel: string;
-    prefix: string;
-    suffix: string;
+    prefix?: string;
+    suffix?: string;
 }
 
 export interface MarkerProps {
@@ -73,7 +73,7 @@ export interface MultiSliderProps {
     markerStyle?: ViewStyle;
     pressedMarkerStyle?: ViewStyle;
     stepStyle?: ViewStyle;
-    stepLabelStyle?: ViewStyle;
+    stepLabelStyle?: TextStyle;
     stepMarkerStyle?: ViewStyle;
     valuePrefix?: string;
     valueSuffix?: string;
